@@ -1,10 +1,14 @@
+import MetzysIcon from "../ui/MetzysIcon";
+
 const Navbar = (props: {
   lang: string;
   changeLang: (value: string) => void;
 }) => {
   return (
     <nav className="flex justify-between p-2 bg-black/30">
-      <span>icon</span>
+      <span>
+        <MetzysIcon className="size-8" />
+      </span>
       <select
         name="lang"
         id="lang"

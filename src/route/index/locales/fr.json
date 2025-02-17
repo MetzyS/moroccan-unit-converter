@@ -1,0 +1,9 @@
+{
+  "title": "Convertisseur devise marocaine",
+  "subtitle": "Au maroc, bien que la devise officielle soit le Dirham (DH), les prix sont bien souvent exprimés dans des unités monétaires différentes.",
+  "diff": [
+    "FRANC (F): F/100 = DH",
+    "RIALS (R): R/20 = DH",
+    "DORO (DO): DO/2 = DH"
+  ]
+}

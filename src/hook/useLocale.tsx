@@ -19,13 +19,13 @@ export const useLocale = (
 
     if (!component) {
       //dynamic json import
-      const modules = import.meta.glob(["../routes/**/locales/*.json"], {
+      const modules = import.meta.glob(["../route/**/locales/*.json"], {
         eager: true,
       });
 
       //fetch route's json
       const exportedJson: any =
-        modules[`../routes/${route}/locales/${lang}.json`];
+        modules[`../route/${route}/locales/${lang}.json`];
 
       //json content => state
       setContent(exportedJson!.default);
@@ -39,7 +39,7 @@ export const useLocale = (
       setContent(exportedJson!.default);
     }
 
-    setIsLoading(false);
+    // setIsLoading(false);
 
     return () => {
       isMounted = false;

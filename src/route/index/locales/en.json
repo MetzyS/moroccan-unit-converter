@@ -1,0 +1,9 @@
+{
+  "title": "Moroccan currency converter",
+  "subtitle": "In Morocco, even tho the official currency is Dirham (DH), prices are often times expressed in different currencies.",
+  "diff": [
+    "FRANC (F): F/100 = DH",
+    "RIALS (R): R/20 = DH",
+    "DORO (DO): DO/2 = DH"
+  ]
+}

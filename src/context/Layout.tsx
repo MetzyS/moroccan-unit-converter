@@ -1,8 +1,8 @@
 import { Outlet, useOutletContext } from "react-router-dom";
-import Navbar from "../component/Navbar";
+import Navbar from "../component/nav/Navbar";
 import { LayoutContext } from "../type/LayoutContext";
 import { useState } from "react";
-import Footer from "../component/Footer";
+// import Footer from "../component/footer/Footer";
 
 const Layout = () => {
   //lang state
@@ -15,8 +15,10 @@ const Layout = () => {
   return (
     <>
       <Navbar lang={lang} changeLang={handleChangeLang} />
-      <Outlet context={{ lang } satisfies LayoutContext} />
-      <Footer lang={lang} changeLang={handleChangeLang} />
+      <div className="mx-4">
+        <Outlet context={{ lang } satisfies LayoutContext} />
+      </div>
+      {/* <Footer lang={lang} changeLang={handleChangeLang} /> */}
     </>
   );
 };
