@@ -3,7 +3,7 @@ const Navbar = (props: {
   changeLang: (value: string) => void;
 }) => {
   return (
-    <nav className="flex justify-between p-2 bg-slate-500">
+    <nav className="flex justify-between p-2 bg-black/30">
       <span>icon</span>
       <select
         name="lang"
