@@ -39,7 +39,7 @@ export const useLocale = (
       setContent(exportedJson!.default);
     }
 
-    // setIsLoading(false);
+    setIsLoading(false);
 
     return () => {
       isMounted = false;

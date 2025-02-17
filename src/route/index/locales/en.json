@@ -1,9 +1,37 @@
 {
-  "title": "Moroccan currency converter",
-  "subtitle": "In Morocco, even tho the official currency is Dirham (DH), prices are often times expressed in different currencies.",
-  "diff": [
-    "FRANC (F): F/100 = DH",
-    "RIALS (R): R/20 = DH",
-    "DORO (DO): DO/2 = DH"
+  "title": "moroccan currency converter",
+  "subtitle": "in Morocco, even though the official currency unit is dirham (MAD), prices are often times expressed in different subunits that refers to old currencies.",
+  "text": "There are 1 main unit and 4 different subunits: ",
+  "currencies": [
+    {
+      "name": "dirham",
+      "desc": "before 1882, dirham was a silver coin issued by the country. Between 1882 and 1912, the dirham became a subunit of the rial. After 1912, the dirham was replaced by the Moroccan Franc and was later reintroduced in 1960 as the main unit.",
+      "color": ""
+    },
+    {
+      "name": "franc",
+      "desc": "this unit refers to the Moroccan franc, used back when a part of Morocco was a French protectorate, from 1912 to 1956.",
+      "color": ""
+    },
+    {
+      "name": "santim",
+      "desc": "from the french word for cent `centime`, this unit replaced the `franc` in 1974",
+      "color": ""
+    },
+    {
+      "name": "rial",
+      "desc": "the Moroccan rial was the main currency between 1880 and 1921.",
+      "color": ""
+    },
+    {
+      "name": "doro",
+      "desc": "this unit refers to a subunit of the Spanish Peseta `duro`, used back when a part of Morocco was a Spanish protectorate, from 1912 to 1956.",
+      "color": ""
+    }
+  ],
+  "currenciesDef": [
+    { "name": "franc/santim", "short": "f", "calc": "d = f/100" },
+    { "name": "rial", "short": "r", "calc": "d = r/20" },
+    { "name": "doro", "short": "do", "calc": "d = do/2" }
   ]
 }
