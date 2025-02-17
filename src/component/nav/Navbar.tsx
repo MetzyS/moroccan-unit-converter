@@ -1,4 +1,5 @@
 import MetzysIcon from "../ui/MetzysIcon";
+import SelectLang from "../ui/SelectLang";
 
 const Navbar = (props: {
   lang: string;
@@ -9,14 +10,7 @@ const Navbar = (props: {
       <span>
         <MetzysIcon className="size-8" />
       </span>
-      <select
-        name="lang"
-        id="lang"
-        onChange={(e) => props.changeLang(e.target.value)}
-      >
-        <option value="fr">FR</option>
-        <option value="en">EN</option>
-      </select>
+      <SelectLang lang={props.lang} changeLang={props.changeLang} />
     </nav>
   );
 };
