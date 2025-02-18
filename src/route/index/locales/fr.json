@@ -1,33 +1,35 @@
 {
   "title": "convertisseur devise marocaine",
   "subtitle": "au Maroc, bien que la devise officielle soit le dirham (MAD), les prix sont souvent exprimés dans des sous-unités monétaires différentes qui font référence à d'anciennes devises.",
+  "text": "il existe 1 unité principale et 4 sous-unités: ",
   "currencies": [
     {
       "name": "dirham",
-      "desc": "before 1882, dirham was a silver coin issued by the country. Between 1882 and 1912, the dirham became a subunit of the rial. After 1912, the dirham was replaced by the Moroccan Franc and was later reintroduced in 1960 as the main unit.",
+      "desc": "avant 1992, le dirham était une pièce en argent frappée par le pays. Entre 1882 et 1912, le dirham est devenu une sous-unité du rial. Après 1912, le dirham a été remplacé par le Franc Marocain et a été par la suite ré-introduit en 1960 en tant qu'unité principale.",
       "color": "bg-green-500/50"
     },
     {
       "name": "franc",
-      "desc": "this unit refers to the Moroccan franc, used back when a part of Morocco was a French protectorate, from 1912 to 1956.",
+      "desc": "cette sous-unité fait référence au Franc Marocain, utilisé lorsque une partie du Maroc était sous protectorat Français, de 1912 à 1956.",
       "color": "bg-blue-500/50"
     },
     {
       "name": "santim",
-      "desc": "from the french word for cent `centime`, this unit replaced the `franc` in 1974",
+      "desc": "du français `centime`, cette sous-unité a remplacé le `franc` en 1947.",
       "color": "bg-purple-500/50"
     },
     {
       "name": "rial",
-      "desc": "the Moroccan rial was the main currency between 1880 and 1921.",
+      "desc": "le rial Marocain était la monnaie principale entre 1880 et 1921.",
       "color": "bg-red-500/50"
     },
     {
       "name": "doro",
-      "desc": "this unit refers to a subunit of the Spanish Peseta `duro`, used back when a part of Morocco was a Spanish protectorate, from 1912 to 1956.",
+      "desc": "Fait référence à une sous-unité du Peseta espagnol `duro`, utilisé lorsqu'une partie du Maroc était sous protéctorat Espagnol de 1912 à 1956.",
       "color": "bg-yellow-500/50"
     }
   ],
+  "currenciesCalcText": "",
   "currenciesDef": [
     { "name": "franc/santim", "short": "f", "calc": "d = f/100" },
     { "name": "rial", "short": "r", "calc": "d = r/20" },
