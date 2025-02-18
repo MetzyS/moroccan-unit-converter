@@ -1,9 +1,14 @@
 import { useState } from "react";
-import { CurrenciesDef, MainCurrency } from "../../type/IndexContent";
+import {
+  Currencies,
+  CurrenciesDef,
+  MainCurrency,
+} from "../../type/IndexContent";
 import InputCurrency from "../ui/InputCurrency";
 import unitConverter from "../../helper/unitConverter";
 
 const InputTable = (props: {
+  currencies: Currencies[];
   currenciesDef: CurrenciesDef[];
   mainCurrency: MainCurrency;
 }) => {
@@ -15,11 +20,12 @@ const InputTable = (props: {
     setTest(unitConverter(e.currentTarget.value, index));
   };
   return (
-    <div className="input-table">
+    <div className="flex gap-2">
       <div className="flex items-center">
         <div>
           <InputCurrency
             label={props.mainCurrency.name}
+            color={props.currencies[0].color}
             currency={props.mainCurrency.short}
             labelFirst={true}
             index={0}
@@ -32,6 +38,7 @@ const InputTable = (props: {
         {props.currenciesDef.map((item, index) => (
           <InputCurrency
             label={item.name}
+            color={props.currencies[index + 1].color}
             currency={item.short}
             key={`inputCurr-${index + 1}`}
             index={index + 1}

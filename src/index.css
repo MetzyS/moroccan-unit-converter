@@ -56,11 +56,6 @@
     bottom: calc(100% - 10px);
 }
 
-.input-table {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
 .currency-table {
     display: grid;
     grid-template-columns: 100px 1fr;

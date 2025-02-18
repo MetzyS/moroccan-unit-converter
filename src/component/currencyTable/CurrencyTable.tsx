@@ -7,14 +7,12 @@ const CurrencyTable = (props: {
 }) => {
   return (
     <div className="currency-table">
-      {/* <ul className="flex justify-between items-center self-center"> */}
       <ul className="flex items-center">
         <Tag
           color={props.currencies[0].color}
           name={props.currencies[0].name}
-          className="max-w-fit"
+          className="w-16"
         />
-        {/* <span>=</span> */}
         <span className="w-full border-b"></span>
       </ul>
       <ul className="flex flex-col border-white/70">
@@ -29,7 +27,7 @@ const CurrencyTable = (props: {
               <span className="border-b w-5 h-4"></span>
               <Tag
                 name={item.name}
-                className="max-w-fit"
+                className="w-16"
                 color={props.currencies[index + 1].color}
               />
             </div>

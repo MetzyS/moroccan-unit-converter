@@ -35,6 +35,7 @@ const Index = () => {
                     name={item.name}
                     tooltipText={item.desc}
                     key={`tag-${index}`}
+                    className="w-18"
                   />
                 );
               })}
@@ -48,6 +49,7 @@ const Index = () => {
               {content.converterText}
             </p>
             <InputTable
+              currencies={content.currencies}
               currenciesDef={content.currenciesDef}
               mainCurrency={content.mainCurrency}
             />

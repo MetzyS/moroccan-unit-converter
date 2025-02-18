@@ -4,11 +4,12 @@ const Tag = (props: {
   name: string;
   color: string;
   tooltipText?: string;
+  text?: string;
   className?: string;
 }) => {
   return (
     <li
-      className={`border border-black/30 shadow p-1 rounded-md cursor-pointer ${props.color} has-tooltip ${props.className} list-none`}
+      className={`border border-black/30 text-center shadow p-1 rounded-md cursor-pointer ${props.color} has-tooltip ${props.className} list-none`}
     >
       {props.tooltipText && (
         <>
@@ -18,7 +19,13 @@ const Tag = (props: {
           <GoTriangleDown className="tooltip-arrow" />
         </>
       )}
-      <span className="text-white capitalize">{props.name}</span>
+      <span
+        className={`text-white capitalize ${
+          props.text ? props.text : "text-sm"
+        }`}
+      >
+        {props.name}
+      </span>
     </li>
   );
 };
