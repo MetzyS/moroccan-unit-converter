@@ -1,7 +1,4 @@
-const Footer = (props: {
-  lang: string;
-  changeLang: (value: string) => void;
-}) => {
+const Footer = () => {
   return <footer>Footer</footer>;
 };
 

@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 @layer base {
-    html {
-        @apply min-h-full
+
+    #root {
+        @apply min-h-screen flex flex-col
     }
 
     body {
