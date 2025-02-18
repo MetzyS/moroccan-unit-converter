@@ -7,9 +7,9 @@ const Navbar = (props: {
 }) => {
   return (
     <nav className="flex justify-between p-2 bg-black/30">
-      <span>
+      <a href="https://www.metzys.net" className="hover:brightness-125">
         <MetzysIcon className="size-8" />
-      </span>
+      </a>
       <SelectLang lang={props.lang} changeLang={props.changeLang} />
     </nav>
   );

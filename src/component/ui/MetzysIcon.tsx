@@ -13,9 +13,7 @@ const MetzysIcon = (props: { className?: string; color?: string }) => {
         style={{
           fillRule: "evenodd",
         }}
-        className={`${
-          props.color ? props.color : defaultColor
-        } hover:brightness-125`}
+        className={`${props.color ? props.color : defaultColor}`}
       />
     </svg>
   );
