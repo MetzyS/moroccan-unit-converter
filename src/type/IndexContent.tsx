@@ -3,6 +3,10 @@ export type IndexContent = {
   subtitle: string;
   currencies: Currencies[];
   currenciesDef: CurrenciesDef[];
+  mainCurrency: MainCurrency;
+  converterTitle: string;
+  converterText: string;
+  detailTitle: string;
 };
 
 export type Currencies = {
@@ -15,4 +19,9 @@ export type CurrenciesDef = {
   name: string;
   short: string;
   calc: string;
+};
+
+export type MainCurrency = {
+  name: string;
+  short: string;
 };

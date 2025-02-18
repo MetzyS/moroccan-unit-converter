@@ -30,8 +30,16 @@
     }
   ],
   "currenciesDef": [
-    { "name": "franc/santim", "short": "f", "calc": "d = f/100" },
-    { "name": "rial", "short": "r", "calc": "d = r/20" },
-    { "name": "doro", "short": "do", "calc": "d = do/2" }
-  ]
+    { "name": "franc", "short": "f", "calc": "/100" },
+    { "name": "santim", "short": "s", "calc": "/100" },
+    { "name": "rial", "short": "r", "calc": "/20" },
+    { "name": "doro", "short": "do", "calc": "/2" }
+  ],
+  "mainCurrency": {
+    "name": "dirham",
+    "short": "dh"
+  },
+  "converterTitle": "converter",
+  "converterText": "enter a value in any of the inputs.",
+  "detailTitle": "calculation detail"
 }
