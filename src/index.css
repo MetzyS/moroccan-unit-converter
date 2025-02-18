@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 @layer base {
+    html {
+        @apply min-h-full
+    }
+
     body {
         @apply bg-white dark:bg-gray-800
     }
