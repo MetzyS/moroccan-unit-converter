@@ -25,22 +25,24 @@
         @apply text-gray-500 dark:text-gray-400 text-sm
     }
     
-    /* .has-tooltip:hover .tooltip {
+    .has-tooltip:hover > * {
         @apply visible z-50;
     }
     
     .tooltip {
-        @apply invisible absolute -mt-8 bg-white/50 pointer-events-none;
-    } */
+        @apply invisible absolute p-1 left-0 bg-gray-700 pointer-events-none align-text-bottom rounded-sm max-w-72;
+    }
+
+    .tooltip-arrow {
+        @apply invisible  absolute size-8 fill-gray-700 pointer-events-none 
+    }
     
 }
 
 .tooltip {
-    visibility: hidden;
-    position: absolute;
+    bottom: calc(100% + 10px);
 }
 
-.has-tooltip:hover .tooltip {
-    visibility: visible;
-    z-index: 100;
+.tooltip-arrow {
+    bottom: calc(100% - 10px);
 }
