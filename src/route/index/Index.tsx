@@ -1,4 +1,5 @@
 import LoadingSpinner from "../../component/ui/LoadingSpinner";
+import Tag from "../../component/ui/Tag";
 import { useLayoutContext } from "../../context/Layout";
 import { useLocale } from "../../hook/useLocale";
 import { IndexContent } from "../../type/IndexContent";
@@ -23,16 +24,15 @@ const Index = () => {
           <p className="first-letter:capitalize text-pretty">
             {content.subtitle}
           </p>
-          <ul className="flex gap-2 mt-2">
+          <ul className="flex gap-2 mt-2 relative">
             {content.currencies.map((item, index) => {
               return (
-                <li
-                  key={`currency-${index}`}
-                  className={`border border-black/30 shadow p-1 rounded-md capitalize cursor-pointer relative ${item.color} has-tooltip`}
-                >
-                  <span className="tooltip p-1">{item.desc}</span>
-                  <span className="text-white">{item.name}</span>
-                </li>
+                <Tag
+                  color={item.color}
+                  name={item.name}
+                  tooltipText={item.desc}
+                  key={`tag-${index}`}
+                />
               );
             })}
           </ul>
