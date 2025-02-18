@@ -24,6 +24,10 @@
     p, span, li {
         @apply text-gray-500 dark:text-gray-400 text-sm
     }
+
+    input {
+        @apply text-white text-base
+    }
     
     .has-tooltip:hover > * {
         @apply visible z-50;
@@ -45,4 +49,24 @@
 
 .tooltip-arrow {
     bottom: calc(100% - 10px);
+}
+
+.input-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.currency-table {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+
+.input-nb::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-nb {
+    -moz-appearance: textfield;
 }
