@@ -39,7 +39,7 @@
     }
     
     .tooltip {
-        @apply invisible absolute p-1 left-0 bg-gray-700 pointer-events-none align-text-bottom rounded-sm max-w-72;
+        @apply invisible absolute p-1 left-0 bg-gray-700 pointer-events-none align-text-bottom rounded-sm w-fit;
     }
 
     .tooltip-arrow {
