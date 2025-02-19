@@ -16,7 +16,7 @@ const Layout = () => {
   return (
     <>
       <Navbar lang={lang} changeLang={handleChangeLang} />
-      <div className="mx-4 grow">
+      <div className="mx-4 grow lg:max-w-5xl lg:flex lg:flex-col lg:self-center">
         <Outlet context={{ lang } satisfies LayoutContext} />
       </div>
       <Footer />

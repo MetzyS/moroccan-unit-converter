@@ -13,7 +13,7 @@ const Tag = (props: {
     >
       {props.tooltipText && (
         <>
-          <p className="tooltip p-1 first-letter:capitalize flex flex-col">
+          <p className="tooltip p-1.5 first-letter:capitalize flex flex-col text-left">
             {props.tooltipText}
           </p>
           <GoTriangleDown className="tooltip-arrow" />
